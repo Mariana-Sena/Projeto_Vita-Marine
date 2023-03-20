@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto PJI</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+                <img src="Vita_Marine.png"  width=110 height=70> 
+        </div>
+
+        <ul class="menu-desktop">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="polvo.html"> Polvo </a></li>
+            <li><a href="baleia.html"> Baleia </a></li>
+            <li><a href="tubarao.html"> Tubarão </a></li>
+            <li><a href="golfinho.html"> Golfinho </a></li>
+            <li><a href="agua_viva.html"> Água-viva </a></li>
+            <li><a href="tartaruga.html"> Tartaruga </a></li>
+            <li><a href="problemas_ambientais.html"> Problemas Ambientais </a></li>
+            <li><a href="login.html"> QUIZ </a></li>
+            <li><a href="sobre_nos.html"> Sobre nós </a></li>
+        </ul>
+        <ul class="menu-mobile">
+            <div class="icon-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="polvo.html"> Polvo </a></li>
+            <li><a href="baleia.html"> Baleia </a></li>
+            <li><a href="tubarao.html"> Tubarão </a></li>
+            <li><a href="golfinho.html"> Golfinho </a></li>
+            <li><a href="agua_viva.html"> Água-viva </a></li>
+            <li><a href="tartaruga.html"> Tartaruga </a></li>
+            <li><a href="problemas_ambientais.html"> Problemas Ambientais </a></li>
+            <li><a href="login.html"> QUIZ </a></li>
+            <li><a href="sobre_nos.html"> Sobre nós </a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+    </nav>
+    <body>
+
+        <main class="tela-principal">
+    
+            <section class='conteudos'>
+    
+                <h1>VITA MARINE QUIZ</h1>
+    
+                <article class='centro' id='instrucoes'>
+                    Leia a questão e clique na resposta correta
+                </article>
+    
+                <article class='questoes'>
+                    
+                    <figure class='imagemDaQuestao'>
+                        <img src="" alt="" width="200px"/>
+                    </figure>   
+    
+                    <header class='questao'>
+                        <span id='numQuestao'></span>
+                        <h2 id='pergunta'></h2>
+                    </header>
+                                    
+                    <div class='corpo'>
+                        <ol type='A' id='alternativas'>
+                            <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        </ol>
+                    </div>
+                </article>
+                
+                <article id='aviso' class='centro'>
+                    <input type="range" value='1' min='1' max='10' step='1'
+                    name="progresso" id="progresso" disabled
+                    /> <br>
+                    <span id='numero'></span> de <span id='total'></span>
+                </article>
+    
+            </section>
+    
+        </main>
+    <audio preload src="aula21b_assets_positive.mp3" id='somAcerto'></audio>
+    <audio preload src="aula21b_assets_negative.mp3" id='somErro'></audio>
+    <audio preload src="aula21b_assets_aplausos (1).mp3" id='somAplausos'></audio>
+    <!-- JS externo -->
+    <script src="javaJogo.js"></script>
+    
+    </body>
+    </html>

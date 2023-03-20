@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Vita_Marine.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto PJI</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+                <img src="Vita_Marine.png"  width=110 height=70> 
+        </div>
+
+        <ul class="menu-desktop">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="polvo.html"> Polvo </a></li>
+            <li><a href="baleia.html"> Baleia </a></li>
+            <li><a href="tubarao.html"> Tubarão </a></li>
+            <li><a href="golfinho.html"> Golfinho </a></li>
+            <li><a href="agua_viva.html"> Água-viva </a></li>
+            <li><a href="tartaruga.html"> Tartaruga </a></li>
+            <li><a href="problemas_ambientais.html"> Problemas Ambientais </a></li>
+            <li><a href="login.html"> QUIZ </a></li>
+            <li><a href="sobre_nos.html"> Sobre nós </a></li>
+        </ul>
+        <ul class="menu-mobile">
+            <div class="icon-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="polvo.html"> Polvo </a></li>
+            <li><a href="baleia.html"> Baleia </a></li>
+            <li><a href="tubarao.html"> Tubarão </a></li>
+            <li><a href="golfinho.html"> Golfinho </a></li>
+            <li><a href="agua_viva.html"> Água-viva </a></li>
+            <li><a href="tartaruga.html"> Tartaruga </a></li>
+            <li><a href="problemas_ambientais.html"> Problemas Ambientais </a></li>
+            <li><a href="login.html"> QUIZ </a></li>
+            <li><a href="sobre_nos.html"> Sobre nós </a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
+    </nav>
+    <section class="banner"> 
+        <br>
+        <div class="texto">
+            
+            <h1 align="justify" class="home"> Seja bem-vindo(a) ao projeto Vita Marine! Aqui você irá aprender um pouco sobre a enorme vida marinha presente nos oceanos, assim como  nós, seres humanos, afetamos a mesma. Caso queira, você também terá a chance de colocar seus novos conhecimentos em prática através do nosso quiz. Acesse nosso menu e mergulhe nesse maravilhoso mundo com a gente!</h1>
+            <br>
+            <figure>
+                <img src="fundo do mar.jpg" width=500 height=300>
+                <figcaption>https://segredosdomundo.r7.com/fundo-do-mar-real/</figcaption>
+             </figure>
+            <h1 align="justify" class="home2">Para contextualizar, há algumas coisas que você prcisa saber sobre os nossos oceanos! Ocupando mais de 1% da superfício
+                total do planeta, o oceano é uma peça fundamental para o sistema terrestre. Além de regular o clima global, ele sustenta 
+                as maiores biodiversidades. Ainda assim, por mais que o planeta Terra seja conhecido como "Planeta Água", cerca de 80%
+                do oceano ainda é desconhecido. Boa parte das águas oceânicas estão localizadas em zonas internacionais, o que significa
+                que nenhuma nação possui direitos sobre elas. Isso, por si só, desestimula a pesquisa oceaonográfica. O ambiente marinho 
+                é um local muito rico em diversidade de fauna e flora, sendo assim, quanto aos animais que vivem nesses vastos espaços,
+                os cientistas afirmam que, em virtude dos fatos mencionados, existem espécies que nunca chegaremos a conhecer! Vale destacar
+                a poluição, a pesca de arrasto e superexploração, entre outros fatores que exploram os oceanos, são algumas das causas
+                responsáveis pela extinção de espécies e reduçaõ da fauna nos oceanos, gerand um impacto negativo em todos os âmbitos
+                que incluem nosso planeta e suas formas de vida.</h1>
+                <style>
+                    div#interface {
+    width: 1200px;
+    margin: auto;
+  }
+  h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+                </style>
+                <br>
+            <h2 class="sub_titulo">Para conhecer mais sobre o Vita Marine e visitar nossas redes sociais, acesse a aba "sobre nós".</h2> 
+            <br>
+        </div>
+    </section>
+    <script>
+        var menuIcon = document.querySelector('.menu-icon');
+        var menuMobile = document.querySelector('.menu-mobile');
+        var iconClose = document.querySelector('.menu-mobile .icon-close')
+
+        menuIcon.addEventListener('click', function(){
+            menuMobile.classList.add('ativo');
+        });
+        iconClose.addEventListener('click', function(){
+            menuMobile.classList.remove('ativo');
+        });
+    </script>
+</body>
+</html>
